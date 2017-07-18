@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="false"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="4dp"
+    android:padding="@dimen/list_item_padding"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:focusable="false">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/favourite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/beverages_1" />
+        <ImageView
+            android:id="@+id/next_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/common_margin"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp" />
+        <TextView
+            android:id="@+id/txt_lesson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/next_icon"
+            android:layout_marginLeft="@dimen/list_item_padding"
+            android:layout_toRightOf="@+id/favourite"
+            android:text="Lesson"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/grammar_title_text_size"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txt_story_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/next_icon"
+            android:layout_below="@id/txt_lesson"
+            android:layout_marginLeft="@dimen/list_item_padding"
+            android:layout_toRightOf="@+id/favourite"
+            android:text="is thay your answer?"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/grammar_title_text_size"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
